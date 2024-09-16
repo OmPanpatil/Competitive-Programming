@@ -1,0 +1,23 @@
+(1) Why you need a software?
+--> Suppose there is one person who work in finance on the basis of returns, policy, funds and for these he / she have to do calculations and somethings it gets wrong with it. So, we suggest him to buy one computer because it can do every type of calculations, like softwares use for editing the photo is Photoshop.
+    we can listen any song using spotify or other softwares.Computer can perform to its potential to do any work at one time doing 100 to 1000 works because it runs on different softwares. and this person want one new software as the current situation is don't have a software. So, we develop one new software for it's work and computer can only understand Binary language.
+    It is also known as Machine language.And the person don't know this langauage and hence communication doesn't happeens with computers. We develop one software and develop one tricks to perform calculations a set of intructions for the computer to perform the steps.
+    And we give the file to that person and the person now can calculate premium by the set of instructions it has in the computer by the file installed in it.
+
+(2) Machine code:
+    --> Computer has one important resource is Processor.
+    -It has Memory unit, control unit, Arithmetic logical Unit.
+    - Then, introduced RAM it can perform various task with it's intructions.
+    - And also Cache it is intermediate 
+    -Software is present is in the form of a file which is executable as (.exe)
+    - Machine code is a binary code. It is platform Dependent.
+    The tangible part of the system is Hardware. To use the hardware for allocation, memory and many more for the utilization, file and process management and all these is come into Kernel that how to us hardware. and all other task also combination of both is known as OS.
+    OS => Kernel + Task. And in today's generation also present GUI.
+    -The software which are present in our computer is .exe file that is understandable language then it will be process to OS. Then, it will read the instruction and pass it to the Hardware.
+
+(3) How to build a software using C/C++
+    --> In today generation we have to learn language like C, C++, java, Python, Javascript, etc.
+    Instead of .exe we will build according to the extensions Like in C it goes as .C => Source file
+    One is Pre-processor, Compiler and Linker is use to build Software.
+    > From .C file to .exe it requires build by the program like Pre-processor reads the files and makes some changes then pass to Compiler then translate the code making it object file and passing it to Linker then uses library code + object file makes the .exe file that is a Software.
+    --> (1) Create a source file, (2) build the software From Install the preprocessor, Compiler and Linker. (3) Download and Install the Softwa
