@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "FIRST.cpp": "cpp"
+        "FIRST.cpp": "cpp",
+        "FIRST.C": "c"
     }
 }
