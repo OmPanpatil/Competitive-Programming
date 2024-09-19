@@ -1,3 +1,5 @@
+Be a Good Listener and Reader✌️
+
 (1) Why you need a software?
 --> Suppose there is one person who work in finance on the basis of returns, policy, funds and for these he / she have to do calculations and somethings it gets wrong with it. So, we suggest him to buy one computer because it can do every type of calculations, like softwares use for editing the photo is Photoshop.
     we can listen any song using spotify or other softwares.Computer can perform to its potential to do any work at one time doing 100 to 1000 works because it runs on different softwares. and this person want one new software as the current situation is don't have a software. So, we develop one new software for it's work and computer can only understand Binary language.
@@ -62,3 +64,96 @@ History of C :
             - Planning and development started in 1964.
             - Initially it was a cooperative project led by MIT and AT&T'S BELL Laboratory.
             - It was developed on the GE645 computer.
+
+            *AT&T'S BELL Laboratory:
+                - American Telephone and Telegraph 
+                - Alexander Graham BELL
+                - Was founded in 1885
+                - 9 Nobel prizes have been awarded at the bell lab for work completion.
+                - Languages developed at bell labs:
+                    => B, C, C++, S, SNOBOL, AWk, AMPL
+                - It was acquired by NOKIA in 2016.
+
+            *BELL Labs Pulled Out of Multics:
+                - Bell labs pulled out of the project in 1969.
+                - Ken Thompson and Dennis Ritchie were their on Multics project from AT&T'S 
+                - Ken Thompson decided to build his own OS.
+                - BCPL => Basic Command Programming Language.
+                - Ken Thompson derived a new language from BCPL known as B language (as an honour or respect towards Martin richards) and developed in the year 1969.
+
+            (2) Evolution of C Language:
+                - Denis Ritchie friend of Ken Thompson developed the compiled programming language C as a replacement for the interpreted language B.
+                - UNIX operating operating system was written in B Language and then rewritten in C language. 
+                - C has consistently ranked amongst the top two languages in TIOBE Index.
+                    (A measure of a popularity of a programming language.)
+
+
+            (3) Version History of C:
+                - K&R Version (V1.0) => 1978 [in today's generation we think as x=-5 as x has stored the value but at that time it was about x = x-5 as a operator and to overcome this they got the version as operator x-=5.]
+                - ANSI C => 
+                - C89
+                - C90
+                - C95
+                - C99 => 1999- Major release of C language where single line comment was introduced, Variable language array.
+                - C11 => 2011 - gets() to Fgets() was introduced.
+                - C17 => 2018 - Only bug fixes.
+
+
+
+                How to compile & run: Open terminal and write gcc hyphine(-) std = c11(version of c) file name then file name with extensions and then compiled ./file name
+                    gcc -std=c11 -o first first.c
+                    ./filename
+
+
+* Tokens, Data Types and Variable Declaration: 
+
+    (1) Tokens: 
+        - It is generally known as words
+        (A) what are tokens?
+            - It is also known as lexical Elements
+            - The text of C/C++ program consists of tokens and whitespace.
+            - the token is the smallest element of a C/C++ program that is meaningful to the compiler.
+            - Parser is a program whose job is to seperate these tokens.
+
+                    * parser recognizes these type of tokens:
+                            - Constants (Literals)
+                            - Identifiers (Variables, Functions ....)
+                            - Keywords
+                            - Operators
+                            - Punctuators
+
+                            int a = 5; (int is a keyword, a is a variable or identifier, = is a operator, 5 is a constant and ";" is a punctuator.)
+                            ._Token1_._token2_._token3_._token4_._ ......
+
+                            Whitespaces: 
+                                - tokens are usually seperated by white spaces, which can be one or more.
+                                    - Blanks (single or more blanks)
+                                    - Tabs (Tabs)
+                                    - New lines(new line from the cursor)
+                                    - Form Feed(vertically same column it goes below at the same position)
+                                    - Comments (Comments are text ignored by the compiler and it is for Developers i.e. Humans.)
+                                        => Comments are useful for documentation of your code and useful for programmers.
+                                        => There are two types of comments:
+                                                (1) Single Line Comments(//),
+                                                (2) Multiline Comments(/* _______ */)
+
+
+                                                Sample program in C:
+                                                    operators, punctuators, constants, Identifiers, keywords, comments
+
+                                                        int main(){
+                                                            int a,b,c; //Variables
+                                                            printf("Enter two numbers:");
+                                                            scanf("%d %d", &a,&b);
+                                                            c=a+b;
+                                                            printf("Sum is %d", c);
+
+                                                        }
+                                                            /* main function body ends here */
+
+        (B) Constants
+        (C) Variables
+        (D) Keywords
+        (E) Comments
+
+
