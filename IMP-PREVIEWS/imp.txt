@@ -151,9 +151,68 @@ History of C :
                                                         }
                                                             /* main function body ends here */
 
-        (B) Constants
-        (C) Variables
-        (D) Keywords
-        (E) Comments
+                                                        * NOTE:    We first  do source file (.c) then it requires the building of softwares are preprocessor(.c and a file which it doesn't read it includes the "#" only into the file i.e. it's reads and converts "#"), compiler (it reads the C file --> converts into Machine code. And this code stored in the object file which is made by compiler consisting of machine code. But, this machine code can't run now it includes linker now. ) and linker() and then .exe executable file.
+                    
+                    
+
+        (B) Constants: 
+            - What is the purpose of making a program?
+                => To process data or Information.
+                   example: To convert a unit program we will need to practice some maths on data and practice it.
+                     
+                     Data = Constant = Information.
+                     (Data can be of anything like transactions, contacts, ATM )
+
+                        In maths, all numbers are real numbers and integers are subsets of real numbers. But let's see it in the world of programming!
+
+                        In programming world we have two types of constant:
+                            (A)Primary Constants, (B) Secondary Constants
+                                (A) Primary Constants: 1. Integer, 2. Real, 3. Character
+                                        1. Integer:
+                                                - Integer constants are negative, positive, Zero numbers they all are Integers.
+                                                - 35, 0, -2
+                                                - Eg: Family members, mobile numbers
+                                        2. Real:
+                                                - Real numbers are the one where point is present. This means it isn't float please understand we will read it 
+                                                - 3.5, -0.05, 2.0
+                                                - Eg: Mobile balance
+                                        3. Character:
+                                                - Any symbol ('___') can (**can be) can be a character constant.
+                                                - Here, single quote is an indication 
+                                                - Digit(5,3,2) with a single quote is known as Character Constant
+                                                - 'A' , 'a' , '+' , '3', '  ' , '@'
+                                                - Not a character constants are '3.4' , '-5'
+                                                - Special or exceptional character: '\n'
+                                                - Eg: Grades,
+
+                                (B)Secondary Constant:
+                                        1. Pointers:
+                                        2. Arrays
+                                        3. String (Sequence of characters)
+                                        4. Structure
+                                        5. Union
+                                        6. Enumerator
+
+
+        (C) Variables: 
+                --> Every .exe file can be store in HDD or SDD and it is permanent memory device.
+                - where, ram is also a memory device and it is volatile.
+                - Processor consist of MU(Memory Unit: It consist of the registers), Control unit(CU: It reads the register instructions), ALU(Arithmetical Logical Unit gets signal to do task.)
+                - Variables are the memory location which stores the data during the execution of the program.
+                - Variables name is any combination of (A to Z or a to z), digits(0 to 9) and underscore(_).
+                - No other symbol is allowed.
+                - Valid variable number cannot start from a digit.
+                - Variable name cannot be a keyword.
+
+                    --> C language is a case sensitive language.
+        (D) Keywords: 
+                - It is a predefined or reserved word which is known by compiler 
+                - auto, break,case,if,else,char,const,continue,default,do,double,enum,extern,float,for,goto,int,long,register,return,short,signed,sizeof,static,struct,switch,typedef,union,unsigned,void,volatile,while --> C89(1989) 32 keywords. C99 (+5) --> _bool,_comlex,_Imaginary, _inline, _restrict. C11(+7) --> _Alignas, _Alignof, _Atomic, _Generic, _noreturn, _static_assert, _Thread_Local.
+
+        (E) Comments:
+
+
+    (2) Data Types and variable Declaration:
+         
 
 
