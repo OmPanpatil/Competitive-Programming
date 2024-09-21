@@ -213,6 +213,105 @@ History of C :
 
 
     (2) Data Types and variable Declaration:
-         
+
+            (A) Why classification of data?
+            --> 
+                - When we create and run program it goes to RAM where we perform and store dat in the form of a variable. and this memory location will occupy some data.
+                - The more data we get as input in the size of small or big it will require some space or data size or memory   and if it is big it will take some time to process.
+                - The execution is fast in C and C++ (The data ko dekhkar runtime mae input decide karenge then to store the data to where to keep the data which will increase the time for execution: was rejected)
+                - Eg: 5, 426, 12847589
+                - when user inputs the data then only we will know how much memory is necessary in run time.
+                - C language uses the second method to know how much space will be required to store for the input data during the compilation time and it will get the data at the output depending upon the number of size of data will get from the compiled time 
+
+                => .Different data requires different ways of handling the data in computer.
+                    Factor responsible for data classifications:
+                        -->Memory size requires to store the data.
+                        -->Method to conert data into binary for internal representation.
+                        --> Kind of operations performed on data.
+
+            (B) Data types:
+                1 Byte = 8 bits
+                --> Char, Int, Float, Double, void
+                    - Int : Any variable of int data type consist of 4 byte.
+                    - Char: Any variable of char data type consist of 1 byte.
+                    - float: any variable of float data type consist of 4 bytes.
+                    - Double: Any variable of Double data types consist of 8 bytes. 
+                
+            (C) Variable Declarations:
+                --> TO perform some task like addition, subtractions, multiplications,etc. we will have to declare the variable.
+                - Which type of data to be store in it then only it will know how much data will require and it will help by data types.
+                - int a,b;(data type declration variable.) a📦 4 bytes, b📦4 bytes [a=5,b=7]
+                  char c; c📦 1 byte('A')
+                  float d; d📦4 bytes(2.5)
+                  double e; e📦 8 bytes (uninitialized variable garbage value is present.)
+
+                    --> The value which at the initial don't have a or assigned a value it is uninitialized variable.
+                    - And there is some value present in it which is garbage value.
+                    - Variable is the one which changes the value again from the data.
+
+
+            (D) ASCII:
+                    - Suppose we have char m = 'A' and the variable changes the data into binary.
+                    But the data present here is the character constant. So, new technique introduced to convert the character constant data into binary data as CHARACTER ENCODING TECHNIQUE.
+                    - It can handle 256 character starting from 0 it will consist of 255.
+                    - Fullform American Standard Code for Information Interchange.
+                    - '0'=48, '1'=49, '2'=50,... 'A' = 65, 'B' = 66,.. 'Z' =90, 'a'=97,'z' =122, 'space' = 32 and every symbols consist of a code
+                    - 65: 01000001, 
+                    - ASCII charaacter consst of single quote and code doesn't because it is a code 😂
+                    - Difference in the size of the memory according to the data types of bits.
+                    - Int a = 'A' (A=65 value) or Int a = 65
+            (E) Float vs double:
+                    - It is a real constant value.
+                    - Float:
+                            => It is a single precision.
+                            - It consist of 4 bytes.
+                    - Double :
+                            => It is a double precision.
+                            - It consist of 8 bytes.
+                            - 0.7:
+                                    - 0.7 * 2= 1.4 --> Consider 1 (the number between o and 1 is fractional value and because of this we have to consider before point ).
+                                    0.4 (fractional value remaining) *2 = 0.8 --> consider 0
+                                    0.8(Fractional value remaining) *2 = 1.6 --> consider 1
+                                    0.6 (fractional value) *2 = 1.2 --> consider 1
+                                    0.2(Fractional value) *2 = 0.4 --> consider 0
+                                    (REPEATATIOn)
+                                    0.4(fractional value) *2= 0.8 --> consider 0
+                                    0.8(Fractional value) *2 = 1.6 --> consider 1
+                                    0.6(fractional value)*2 = 1.2 --> consider 1
+                                    0.2(Fractional value) *2 = 0.4 --> consider 0
+                                    (REPETATION)
+                                    0.4(Fractional value) *2= 0.8 --> consider 0
+                                    0.8(fractional value) *2= 1.6 --> consider 1
+                                    0.6(Fractional value) *2 = 1.2 --> consider 1
+                                    0.2(Fractional value) *2 = 0.4 --> consider 0
+                                    0.4(Fractional value) *2 = 0
+                                    (REPETATION...)
+
+                                    0.7 => Binary form can be : 0.1011001100......(infinite)
+
+                                    - And to represent the notation for (0.some binary numbers..) they introduced with two types of notations:
+                                    (A) Fixed Point Notation,
+                                    (B) Variable or Floating point Notation
+
+
+* Input, Output Instructions in C:
+    (1) About C Language:
+            -->
+                - (1) C is a block structured programming language.(from open curly bracket to curly bracket close is known as block and we code in this block and like this many blocks )
+                - (2) A C program can have many blocks according to the utility.
+                - (3) Usually outermost blocks are functions.
+                - (4) Functions has some name for Identification [as f1()] rules: alphabets, digits, underscore.
+                - (5) Even the smallest program has one function.
+                - (6) All functions name must be different.
+                - (7) If there is only one function it's name be main()
+                - (8) If there are more than one functions present in a program then also one function name must be main().
+    (2) printf
+    (3) write your first program,
+    (4) Escape Sequence
+    (5) Format specifiers
+    (6) Scanf()
+
+
+
 
 
