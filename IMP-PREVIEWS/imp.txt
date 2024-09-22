@@ -299,14 +299,54 @@ History of C :
             -->
                 - (1) C is a block structured programming language.(from open curly bracket to curly bracket close is known as block and we code in this block and like this many blocks )
                 - (2) A C program can have many blocks according to the utility.
-                - (3) Usually outermost blocks are functions.
+                - (3) Usually(Kabhi-Kabhi) outermost blocks are called functions.(Identifiers: Variables, functions,etc.)
                 - (4) Functions has some name for Identification [as f1()] rules: alphabets, digits, underscore.
                 - (5) Even the smallest program has one function.
                 - (6) All functions name must be different.
                 - (7) If there is only one function it's name be main()
                 - (8) If there are more than one functions present in a program then also one function name must be main().
-    (2) printf
-    (3) write your first program,
+                        => Program have two declaration statement: (1) Declarative Statement : It is written for compiler to give how many space or memory or any work it does it will do. It isn;t a executive functions.
+                                                                    (2) Action statements: It is the executive statement. 
+                - (9) U can write declaration statements inside a block (Locally: The declaration statement can be only written inside the block where it is assign and known as local variable and local declaration.) and outide the block(Globally: The declaration statement can be written everywhere in the program in the outer and inside the functions. And also known as Global variable and global declaration. )
+                - (10) Local Variable VS Global variable.
+                - (11) Action statement resides only inside the blocks(functions)[i.e. Local variablem]
+                - (12) C is a case sensitive language.
+
+
+                * Standard Input & Output Devices:
+                    --> The directional flow of data from the software to the user is output. Eg: ATM Message of inserting a card it is coming for the user instruction.
+                    --> The directional flow of data from the user input to the software is Input. Eg: The card swipping on an ATM card reader for the transactions it will read the data of the user and take it as a input.
+                    Keyboard => Standard Input Device,
+                    Monitor => Standard Output Device.
+                    NOTE: Standard because it is generally present in most of the devices or computers.
+
+                    Output Instruction:
+                        --> Function is a block of code of the program.
+                        --> We can make a function like:
+                            f1(){
+                                _______
+                                _______
+                                ________
+                                code____
+                            }
+                            Defining a function by it's name and inside the block of open curly bracket and close curly bracte is code.
+    (2) printf => Predefined function(already defined function)
+            --> NOTE:  koi bhi functionke block mae likhe action statements tabh execute hotae hai jab iss function ko call kiya jata hai.
+            --> Function call and function defining is different.
+            => printf() function is used to print some text on the monitor.
+                - printf("Hello");
+            => printf():
+                        (1) To print the text.
+                        (2) To print the value of a variable or expression.
+                        NOTE: You can call a function any number of times. But can define only once.
+    (3) write your first program:
+            #include<iostream>
+            #include<conio.h>
+            main(){
+                printf("Welcome");
+                return 0;
+            }
+            
     (4) Escape Sequence
     (5) Format specifiers
     (6) Scanf()
