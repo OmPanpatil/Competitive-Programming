@@ -340,14 +340,30 @@ History of C :
                         (2) To print the value of a variable or expression.
                         NOTE: You can call a function any number of times. But can define only once.
     (3) write your first program:
-            #include<iostream>
-            #include<conio.h>
-            main(){
+            #include<stdio.h> (standard input output header file.)
+            
+            int main(){
                 printf("Welcome");
                 return 0;
             }
             
-    (4) Escape Sequence
+    V.IMP =====>        .C source file --> build (preprocessor[reads the file with # which includes 402 lines of code], compiler[which will add the 402 lines of code + program lines of code=> object file], Linker[Object file + Library file] => Executable file.)
+                        stdio.h => includes the line of codes which is pre-defined functions and other functions, etc. Not, defination of any function.
+
+                        printf print where cursor is present --> just like our pen when we write something on paper.
+
+                        \n --> is a special character constant which will print new comment on new line or cursor to a new line.
+
+            
+    (4) Escape Sequence:
+                \n => New line,
+                \t => Tab space,
+                \b => back space,
+                \r => Carriage return
+                \f => form Feed
+                \\ => print \
+                \" => print "
+                \' => print '
     (5) Format specifiers
     (6) Scanf()
 
