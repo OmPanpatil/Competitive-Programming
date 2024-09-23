@@ -364,7 +364,11 @@ History of C :
                 \\ => print \
                 \" => print "
                 \' => print '
-    (5) Format specifiers
+
+                Special string: %d which doesn't print itself but helps the other to print the value with the variable value.
+    
+    (5) Format specifiers:
+        --> %d = Int, %c = Char, %f =Float, %lf = Double.
     (6) Scanf()
 
 
