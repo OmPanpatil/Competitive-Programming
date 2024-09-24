@@ -360,6 +360,8 @@ History of C :
                 \t => Tab space,
                 \b => back space,
                 \r => Carriage return
+                        printf("abc \r def);
+                        o/p: def
                 \f => form Feed
                 \\ => print \
                 \" => print "
@@ -369,7 +371,17 @@ History of C :
     
     (5) Format specifiers:
         --> %d = Int, %c = Char, %f =Float, %lf = Double.
-    (6) Scanf()
+    (6) Scanf() :
+        --> Predefined functions
+        User will enter the data
+        & - address of is use only in scanf. We can learn about & in depth after pointers
+        For a single variable user wants to input
+        scanf("%d",&a);
+        for multiple variable user wants to input 
+        scanf("%d%d",a,b);
+
+
+        700+ Questions to be solve❤️
 
 
 
