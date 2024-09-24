@@ -1,4 +1,5 @@
 Be a Good Listener and Reader✌️
+Cross check it properly do practice more and u will be successful.
 
 (1) Why you need a software?
 --> Suppose there is one person who work in finance on the basis of returns, policy, funds and for these he / she have to do calculations and somethings it gets wrong with it. So, we suggest him to buy one computer because it can do every type of calculations, like softwares use for editing the photo is Photoshop.
@@ -265,6 +266,8 @@ History of C :
                     - Float:
                             => It is a single precision.
                             - It consist of 4 bytes.
+                            => for float we can use as we see much decimal in the output so we can use as per the format specifiers and how many zeros.
+                               %0.2f or %0...... 
                     - Double :
                             => It is a double precision.
                             - It consist of 8 bytes.
