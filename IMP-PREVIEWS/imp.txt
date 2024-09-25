@@ -383,9 +383,13 @@ History of C :
         for multiple variable user wants to input 
         scanf("%d%d",a,b);
 
+        In Scanf : space " " , Tab "\t" , "\n" are called as delimiters.(To seperate the data)
+
 
         700+ Questions to be solve❤️
 
+
+         [(s.p -c.p)*25]/Quantity
 
 
 
