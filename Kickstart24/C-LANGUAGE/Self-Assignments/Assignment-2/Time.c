@@ -5,7 +5,7 @@
 #include<stdio.h>
 int main(){
     int h,m;
-    printf("Enter time (HH : MM) : ");
+    printf("Enter time (\"HH : MM\") : ");
     scanf("%d%d",&h,&m);
     printf("%d Hour and %d Minute",h,m);
     printf("\n");

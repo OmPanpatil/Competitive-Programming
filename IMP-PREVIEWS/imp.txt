@@ -171,10 +171,13 @@ History of C :
                                 (A) Primary Constants: 1. Integer, 2. Real, 3. Character
                                         1. Integer:
                                                 - Integer constants are negative, positive, Zero numbers they all are Integers.
+                                                - Int 4 bytes
                                                 - 35, 0, -2
                                                 - Eg: Family members, mobile numbers
                                         2. Real:
                                                 - Real numbers are the one where point is present. This means it isn't float please understand we will read it 
+                                                - The real constants are double in nature by default.
+                                                - Double 8 bytes.
                                                 - 3.5, -0.05, 2.0
                                                 - Eg: Mobile balance
                                         3. Character:
@@ -390,6 +393,180 @@ History of C :
 
 
          [(s.p -c.p)*25]/Quantity
+
+
+* Operators in C language :
+    (1) Aritmetic Instructions:
+        --> An instruction which is used to manipulate the data using operators is known as Arithmetic Instructions.
+        - Suppose 3+4 here, 3 and 4 are operands/data and "+" is operator. So the given result will be of 7 value.
+        - In mathematics we use BODMAS but in C language it is not applicable. It uses different rules
+
+    (2) classification of operators :
+    
+    (1) Unary operators : (+,-,++,--,sizeof())
+    (2) Arithmetic operator (*,/,%,+,-)
+    (3) Bitwise operator (&,|,^,~,>>,<<)
+    (4) Relational operator (<,>,<=,>=,==,!=)
+    (5) Logical operator (!,&&,||)
+    (6) Conditional operator (?:)
+    (7) Assignment operator (=,+=,-=,*=,%=,/=)
+
+
+    NOTE: If we catogerize the operators on the basis of number of operands :
+    (a) Unary operator (- 1 Operand),
+    (b) Binary operator (- 2 Operand),
+    (c) Ternary operator (- 3 Operand)
+
+
+        (1) Unary operators:
+            (+,-,++,--)
+            - The operator "+" and "-" indicates the nature in which the numbers are in their form.
+            - They are called as Unary+ and Unary-
+
+                +5  Unary+
+                -7  Unary-
+                _________
+
+
+                - The operator "++" is known as increment operator.
+                - And the operator "--" is known as Decrement Operator
+
+                ++   Increment Operator by 1 => x=x+1
+                --   Decrement Operator by 1
+
+                - The increment operator increase by one value.
+                - Example:
+
+                    - int x =5;
+                    printf("%d",x);
+                    O/P: 5
+                    _______________
+
+                    - int x++ =5;
+                    printf("%d",x);
+                    O/P: 6
+                                        --> Post Increment (x++):After the x variable.
+                    ________________
+
+                    - int ++x =6;
+                      printf("%d,x);
+                      O/P: 7
+                                        --> Pre Increment (++x): Before the x variables.
+
+                
+                => Both pre and post increment has same functions but priority is different the pre increment is the first increment and post increment is the last operator of all operator.
+                => They are only applicable on variable operands
+
+                pre-decrement priority is greater than everyone and post decrement value is low than assignment operator.
+
+
+                Sizeof() operator : 
+
+                        - It performs the operations too manipulate the data and to give the output.
+                        - It can consist of : (1) Data Type, (2) Variable, (3) Constant in the bracket.
+                        (1) Data Type : 
+                                --> int x;
+                                    x = sizeof(float) //Here, float will be the value of x. Float is a data type.
+                                    printf("%d",x);
+
+                                    o/p: 4 (float value:4)
+
+                        (2) Variable :
+                                int x,y;
+                                float m;
+                                char ch;
+                                double d1;
+                                x = sizeof(d1) => x=8
+                                x = sizeof(ch) => x=1
+                                x = sizeof(m) => x=4
+                                x = sizeof(x) => x=4
+
+                        (3) Constant :
+
+                                x=sizeof(35) => x= 4 . Since, the integer is 4 bytes so x value will be of 4 value.
+                                x=sizeof(0.7) => x=8 . Since, the real value if double in nature by default. So, x=8.
+                                x=sizeof('A') => x=4 . Due to it's ASCII Code it is integer in nature.
+
+
+        (2) Arithmetic operator :
+        
+        - *,/,%, (High priority)
+          +,- (Low priority)
+        
+        - The multiplication, modulus, division have high priority than addition and subtraction. It solve first high priority and then low. But, in the case of same priority it will go from left to right to solve the equations.
+        
+        Modulo: we have to find remainder if result is zero it is completely divisible and if not it is not divisible.
+
+            --> 5%2 = 1
+
+            x/5 =3 or maybe 3.0
+
+            Division:
+            x/10 => x without the last digit
+            257/10 = 25
+
+            Modulus:
+            x%10 => last digit of x
+            235%10 = 5 
+
+            - real constant doesn't get results in modulo
+
+        (3) Bitwise Operator :
+
+                - (&[And],|[OR],^[XOR],~[Not],>>[Right shift],<<[Left shift])
+                - Binary digits are bits
+                - 0 and 1 is bits
+
+                &[AND] :
+
+                    0&0 => 0
+                    0&1 => 0
+                    1&0 => 0
+                    1&1 => 1
+                    _______________
+                    If both the inputs are 1 then the result will be 1
+
+                    Eg: int x;
+                        x = 25&57
+                        x= 25 
+
+
+                |[OR] : 
+                    If both of the inputs are 0 then the result will be 0 
+
+                   0|0 => 0
+                   0|1 => 1
+                   1|0 => 1
+                   1|1 => 1
+
+                   x = 39|83
+                   x = 100111|1010011
+                   x =   00100111
+                       + 01010011
+                       ___________
+                         01110111     => 119
+                ^[XOR] :
+                    - If both are opposite then only the value will be 1
+
+                    0^0 => 0
+                    0^1 => 1
+                    1^0 => 1
+                    1^1 => 0
+
+                    x = 60^29;
+                    60 => 0111100
+                    29 => 0011101
+                    _______________
+                    33 => 100001
+
+                ~[Not] :
+
+                ~0 => 1
+                ~1 => 0
+
+
+
+
 
 
 
