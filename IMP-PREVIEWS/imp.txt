@@ -7,6 +7,7 @@ Cross check it properly do practice more and u will be successful.
     It is also known as Machine language.And the person don't know this langauage and hence communication doesn't happeens with computers. We develop one software and develop one tricks to perform calculations a set of intructions for the computer to perform the steps.
     And we give the file to that person and the person now can calculate premium by the set of instructions it has in the computer by the file installed in it.
 
+    - 1+1 =0 and 0+1 =1.
 (2) Machine code:
     --> Computer has one important resource is Processor.
     -It has Memory unit, control unit, Arithmetic logical Unit.
@@ -432,7 +433,7 @@ History of C :
                 - And the operator "--" is known as Decrement Operator
 
                 ++   Increment Operator by 1 => x=x+1
-                --   Decrement Operator by 1
+                --   Decrement Operator by 1 => x=x-1
 
                 - The increment operator increase by one value.
                 - Example:
@@ -457,7 +458,7 @@ History of C :
                 => Both pre and post increment has same functions but priority is different the pre increment is the first increment and post increment is the last operator of all operator.
                 => They are only applicable on variable operands
 
-                pre-decrement priority is greater than everyone and post decrement value is low than assignment operator.
+                pre-decrement priority is greater than and post increment & decrement value is low than assignment operator.
 
 
                 Sizeof() operator : 
@@ -490,12 +491,16 @@ History of C :
 
         (2) Arithmetic operator :
         
-        - *,/,%, (High priority)
-          +,- (Low priority)
-        
+        --> *,/,%, (High priority)
+            +,- (Low priority)
+
+            a*b/c => *
+            a/b*c => /
+            a+b*c => *
+
         - The multiplication, modulus, division have high priority than addition and subtraction. It solve first high priority and then low. But, in the case of same priority it will go from left to right to solve the equations.
         
-        Modulo: we have to find remainder if result is zero it is completely divisible and if not it is not divisible.
+        Modulo: we have to find remainder if result is zero it is completely divisible and if not it is not divisible the recurring is modulo.
 
             --> 5%2 = 1
 
@@ -510,6 +515,7 @@ History of C :
             235%10 = 5 
 
             - real constant doesn't get results in modulo
+            3.5%2 => Error
 
         (3) Bitwise Operator :
 
@@ -563,6 +569,50 @@ History of C :
 
                 ~0 => 1
                 ~1 => 0
+
+                x = ~5;
+                5 = [00000000] [00000000] [00000000] [00000101]
+                ~ 5 = [11111111] [11111111] [11111111] [11111010]
+
+                The first bit is known as most significant bit. It is sign bit
+                0 = positive 
+                1 = negative
+
+                So, as the numbers are more in 1 bits it will be negative then we can consider -k=? to find the negative number of ~5.
+                -k = ~5
+
+                Any variable a = 25;
+                 
+                 a = 25 [00000000] [00000000] [00000000] [00011001]
+                 a = -25  : to find?
+
+                 By using two's compliment we can find the negative number : 1101
+                                                                    1's -->  0010   (negative by changing 1 to 0 and vice versa)
+                                                                               +1
+                                                                             __________
+                                                                    2's -->  0011   
+
+                 a = -25 [11111111] [11111111] [11111111] [11100111]           --:> 1's
+                                                                 +1
+                         ____________________________________________
+                a = -25 =[11111111] [11111111] [11111111] [11100111]           --:> 2's
+
+
+                Formula : 
+                    if any data is k has binary : k = b1 
+                    Then -k = b2 which is a Two's compliment of k of b1 
+
+
+                >>[Right-shift] :
+                     - It will shift towards right.
+                     --> x = 53>>2
+                        => 53 binary numbers : [00000000] [00000000] [00000000] [00110101]
+                            1:36:53
+                            1(First-shift) =>    []
+
+                <<[Left-shift] :
+
+
 
 
 
