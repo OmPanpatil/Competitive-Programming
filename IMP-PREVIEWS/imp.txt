@@ -614,20 +614,114 @@ History of C :
                                                ________________________________________________
                                                  000000000000000000000000001101 --> Output : 13 
 
-                         
+                         * x = 12<<3
+                         - 96
 
                 <<[Left-shift] :
 
-                    --> x = 12<<3
+                    --> x = 12>>3
                          
                         => 12 binary number : [00000000] [00000000] [00000000] [00000110]
                         => 3 binary number : [00000000] [00000000] [00000000] [00000011]
 
-                        12 => 00000000000000000000000000000110|
-                first shift - ||||||||||||||||||||||||||||||||||
-                              |00000000000000000000000000000110 --> 0 is remaining outside
-                Secondshift - ||00000000000000000000000000000110 --> 10 is remaining
-                Thirdshift -
+                        12 => 00000000000000000000000000000110|||
+                first shift - |||||||||||||||||||||||||||||||||||
+                              |00000000000000000000000000000110|| --> 0 is remaining outside
+                Secondshift - ||00000000000000000000000000000110| --> 10 is remaining
+                Thirdshift -  |||00000000000000000000000000000110 --> 110 is remaining
+                              ____________________________________________
+                                 00000000000000000000000000000
+
+
+        (4) Relational operator :
+
+             - High priority --> ( <,>,<=,>= )
+             - Low priority --> ( ==[equal to],!= [Not equal to])
+
+             - Also known as comparison operator.
+             - Result of relational operator is always either 0 or 1 only.
+             - true = 1 and false =0.
+             - Suppose,
+                    x = 4>3; => 1
+                    x = 3!=3; => 0
+                    x = 5<=5; => 1
+                    x = 5>4>3 => 0 ---> Because the > sign have same standard and it will solve from left to right then it will first solve (5>4) it is true so it will be 1 then it will solve (1>3) as (5>4) is 1. So, the result will be 0. As 1 can't be greater than 3.
+
+                    x = 6 = 6.0 => value will be 1. Because C language uses type conversion like 3+4.0 so it will first convert 3 of int data type into float 3.0 and then add it with 3.0+4.0 = 7.0 value.
+
+
+        (5) Logical Operator :
+             - Highest priority than less than or greater than --> ! (Not [Unary])
+             - && --> And
+             - OR --> OR
+             - NOTE : !True = False and !False = True
+                      Every Non-Zero value is True.
+                      Every Zero value is False.
+
+                      Eg: x = !5 > -2
+                         --> every non-zero value is true i.e. 1.
+                         - Then, !1 will be equal to 0.
+                         - Then 0 > -2
+                         - So, yes the zero value is greater than -2 . So, the result will be 1.
+                         O/P : 1
+
+          - And (&&) and OR (||) --:> 
+             => In the case of (&&) And operator of logical operator :
+              - If one statement is False we will not consider the second statement and the result will be false for And (&&) operator.
+              - If One statement is true and the other statement also is true then the value will be true i.e. 1 for OR operator.
+
+              For And (&&) :
+                 Exp 1 && Exp2
+                 True && True = True
+                 True && False = False
+                 False && don't consider 2nd statement the result will be false i.e. Zero = False.
+
+                 Eg: int x = 4, y;
+                     y=5>4 && x++
+                     //Here, the x++ is post decrement it will have low priority than assignment operator so we will first solve greater than y will be equal to 5 as the condition of statement1 is true than we will check for the second statement2 if the condition gets as false the result will be false i.e. o or the statement arrives as true the condition will be true i.e. 1 and the whole condition will be 1 i.e True.
+                     y=5 && 5
+                     y = 5 i.e. 1 (True)
+
+         - For OR (||) :
+                 Exp1 || Exp2
+                 False || False = False --> 0
+                 False || True = True --> 1
+                 true || don't consider 2nd expression or statement the result will be True. --> 1
+
+                 for Eg: 
+                    int x=4,y;
+                    y=5>4||x++
+                    printf(" %d %d",x,y);
+                    as the first expression or first statement is true the result will be true.
+                    - As the OR has the rule that if one of them is true than the result will be true.
+
+        (6) Assignment Operator :
+             (=)
+             - Assign the value or stores the data
+             - From right to left
+             - x=4
+             - 4 value will be stored in the variable of x.
+             - It will stores the data from the right side to the left side of the variable.
+             - Variable can be anything.
+             - container = content
+             - x=y=4 --> y=4 then --> x=y=4.
+
+        (7) Compound Assignment Operator : 
+                ( +=,-=,*=,/=,%=)
+
+                += => Means x+data
+
+                int x = 5;
+
+                x += 4;  --> This means : x = x + 4; -->x = 9
+                x -= 3;  --> this means : x = x - 3; -->x = 2 
+                x *= 2;  --> this means : x =x * 2; --> x = 10
+                x /= 6;  --> this means : x = x/6; --> x = 0
+                x %= 5;  --> this means : x = x%5; --> x = 0
+
+             
+
+
 
 
 
