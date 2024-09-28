@@ -719,6 +719,9 @@ History of C :
                 x /= 6;  --> this means : x = x/6; --> x = 0
                 x %= 5;  --> this means : x = x%5; --> x = 0
 
+
+        --> Swapping : It refers to the operations of exchanging the values of two variables.
+
              
 
 
