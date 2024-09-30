@@ -678,7 +678,7 @@ History of C :
 
                  Eg: int x = 4, y;
                      y=5>4 && x++
-                     //Here, the x++ is post decrement it will have low priority than assignment operator so we will first solve greater than y will be equal to 5 as the condition of statement1 is true than we will check for the second statement2 if the condition gets as false the result will be false i.e. o or the statement arrives as true the condition will be true i.e. 1 and the whole condition will be 1 i.e True.
+                     //Here, the x++ is post increment it will have low priority than assignment operator so we will first solve greater than y will be equal to 5 as the condition of statement1 is true than we will check for the second statement2 if the condition gets as false the result will be false i.e. o or the statement arrives as true the condition will be true i.e. 1 and the whole condition will be 1 i.e True.
                      y=5 && 5
                      y = 5 i.e. 1 (True)
 
@@ -721,6 +721,15 @@ History of C :
 
 
         --> Swapping : It refers to the operations of exchanging the values of two variables.
+
+
+        Approach to solve :
+            - To solve a program :
+                (a) Read and understand the question properly
+                (b) Test case : Output to be expected.
+                (c) Every logic u have build now dry run it with diagram and dry run it!
+                (d) Identify the problem in the logic and don't give up while solving the problem then dry run it and why, where it's happening and to try a logic.
+                (e) It may take some time
 
              
 
