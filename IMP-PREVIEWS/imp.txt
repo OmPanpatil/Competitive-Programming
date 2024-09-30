@@ -731,6 +731,108 @@ History of C :
                 (d) Identify the problem in the logic and don't give up while solving the problem then dry run it and why, where it's happening and to try a logic.
                 (e) It may take some time
 
+
+* Decision Control instructions :
+    --> Two types of instructions :     (A) Declaration Instruction, (B) Action Instructions.
+    - In declaration instruction we had studied earlier.
+    - Action Instruction --:> 
+        -> 1. Input/Output Instruction, (Printf and scanf)
+        -> 2. Arithmetic Instruction, (operators or process)
+        -> 3. Control Instruction. (It controls the sequence of code inside the block of code.)
+
+        --> Control statements :
+            => the program runs on the sequence of instructions in a flow to execute it by processor line by line from first to last line like first->second->third line of code -> ............
+            => The processor runs on the sequence : 1-2-3-4-5-6-...
+            => In any program we want the processor controls from one line of code to another line of code and we can control the flow.
+
+
+            - 1. Decision Control Statement =>
+                    .if, .else-if, .Conditional operator
+                    --> It is also known as Selection control statement or instructions.
+
+                    .if ==>
+                        - The program runs on the instructions of the code of the sequence.
+                        - Suppose, for eg : We use ATM
+                                --> In this case if i want to enquire about my savings it will run some programs.
+                                --> And it will only run when the condition is true
+                                --> Structure :
+
+                                        int main(){
+                                             _______________           (1)
+                                             _______________            (2)
+                                             _______________            (3)
+                                             _________                  (4)
+
+                                             ________________           (5)
+                                             __________                 (6)
+                                             _______________             (7)
+                                             _______                    (8)
+
+                                             _______________                                    (9)
+                                             _______                                            (10)
+                                             ____________________________________________       (11)
+                                        }
+
+
+                                        Now, it will run the  program but it want the control of lines of code as to run it.
+                                        Then, it will follow some set of instructions like jumping from (4) to (9)th line of code.
+                                        So, we will want to have the control of the statements while the condition is true then only it will process.
+
+                                        
+                                        int main(){
+                                             _______________           (1)
+                                             _______________            (2)
+                                             _______________            (3)
+                                             _________                  (4)
+
+                                            
+                                            if(Condition){ ________________           (5)
+                                                           __________                 (6)
+                                                           _______________             (7)
+                                                           _______                    (8)
+                                            }
+                                             _______________                                    (9)
+                                             _______                                            (10)
+                                             ____________________________________________       (11)
+                                        }
+
+                Now, it will have the control like to enquire about the savings or transactions from the ATM. It will only run when one condition is true so that it can run.
+                And other for the another process of program like transactions, mini-statements than it will follow them by the simillar process when their condition is true to run that line of code of program.
+                -->  .if 
+                    - It is not a function.
+                    - No keyword is a function remeber it.
+                    - It is also known as .if block.
+                    - if block.
+                    - Syntax : 
+                        if(Condition){
+                            _______
+                            _______
+                            ________
+                            ___________
+                        }
+
+                    - If condition is true then it will enter into the block of if statement.
+                    - If condition is false then it will throw the process out of the block of .if code.
+
+
+                    NOTE : 1. if, else is not an expression but a statement
+                           2. Conditional operator is an expression.
+
+                            .Conditional Operator --:>
+                                exp1?exp2:exp3;
+                                - If the condition is true for exp1 then it will print exp2 otherwise exp3.
+                                - Example : 
+                                (a>0)? printf("The number is positive"):printf("The number is non-positive.");
+                                O/P : The number is positive.
+
+                                NOTE : Every non-zero value = True, Every Zero value = False.
+
+            - 2. Iterative Control Statement :
+                    --> 
+            - 3. Switch Case Control Statement,
+            - 4. Goto Control Statement.
+
+
              
 
 
