@@ -827,6 +827,46 @@ History of C :
 
                                 NOTE : Every non-zero value = True, Every Zero value = False.
 
+                                * Nesting :
+                                    - if(condition){
+                                        line 1;
+                                    }
+                                    else{
+                                        if(c2){
+                                            line2;
+                                        }
+                                        else{
+                                            if(c3){
+                                                line3;
+                                            }
+                                            else{
+                                                if(c4){
+                                                    line4;
+                                                }
+                                                else{
+                                                    line5;
+                                                }
+                                            }
+                                        }
+                                    }
+
+
+
+                                    if-else ladder is nothing but arrangement of if - else 😁
+
+                                    if(c1){
+                                        line1;
+                                    }else if(c2){
+                                        line2;
+                                    }else if(c3){
+                                        line3;
+                                    }else if(c4){
+                                        line4;
+                                    }else{
+                                        line5;
+                                    }
+
+
             - 2. Iterative Control Statement :
                     --> 
             - 3. Switch Case Control Statement,
